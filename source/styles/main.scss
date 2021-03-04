@@ -3,10 +3,30 @@
 @import "./mixins.scss";
 @import "./button.scss";
 
-// =================== Блоки ========================
-.home-section {
-  background-color: $cream;
-  padding: 50px 0 70px;
-}
+// =================== blocks ========================
+
+// -------- home section --------
+@import "./home.scss";
 @import "./navbar.scss";
 @import "./carousel.scss";
+
+// -------- free delivery --------
+@import "./free-delivery.scss";
+
+// -------- collections --------
+@import "./collections.scss";
+
+// -------- catalog --------
+@import "./catalog.scss";
+
+// -------- models --------
+@import "./models.scss";
+
+// -------- subscribe --------
+@import "./subscribe.scss";
+
+// -------- main-links --------
+@import "./main-links.scss";
+
+// -------- footer --------
+@import "./footer.scss";

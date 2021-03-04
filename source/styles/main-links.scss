@@ -1,0 +1,113 @@
+.main-links {
+	color: $white;
+	background-color: $greyDark;
+
+	padding: 73px 0 78px;
+
+	.container {
+		@include flex-row;
+
+		// .container @media
+		@media (max-width: $md) {
+			@include flex-column;
+		}
+	}
+}
+
+.main-links-info {
+	flex: 2;
+
+	&__description {
+		font-family: $primaryFontRegular;
+		font-size: 14px;
+		line-height: 22px;
+
+		width: 50%;
+
+		margin-top: 32px;
+	}
+
+	// .main-links-info @media
+	@media (max-width: $md) {
+		@include flex-row;
+		align-items: center;
+
+		margin-bottom: 30px;
+
+		&__description {
+			width: 100%;
+			margin-top: 0;
+			margin-left: 20px;
+		}
+
+		img {
+			height: 40px;
+		}
+	}
+	@media (max-width: $xs) {
+		@include flex-column;
+
+		&__description {
+			margin-top: 20px;
+			text-align: center;
+		}
+	}
+}
+
+.main-links__navigation {
+	@include flex-row;
+	justify-content: space-between;
+	flex: 3;
+
+	// .main-links__navigation @media
+	@media (max-width: $xs) {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	&-list {
+		// .main-links__navigation-list @media
+		@media (max-width: $xs) {
+			width: 50%;
+			margin-bottom: 15px;
+		}
+
+		&-title {
+			font-family: $primaryFontBold;
+			font-size: 10px;
+			line-height: 12px;
+			text-transform: uppercase;
+		}
+
+		ul {
+			padding-left: 0;
+			margin-top: 20px;
+		}
+
+		li {
+			font-family: $primaryFontMedium;
+			font-size: 14px;
+			line-height: 22px;
+			color: #cbcfd4;
+
+			list-style-type: none;
+
+			margin: 5px 0;
+
+			&.social-links {
+				&__vk::before {
+					content: url(../img/icons/vk.svg);
+					padding-right: 5px;
+				}
+				&__fb::before {
+					content: url(../img/icons/fb.svg);
+					padding-right: 5px;
+				}
+				&__inst::before {
+					content: url(../img/icons/inst.svg);
+					padding-right: 5px;
+				}
+			}
+		}
+	}
+}

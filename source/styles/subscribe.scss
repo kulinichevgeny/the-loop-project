@@ -1,0 +1,77 @@
+.subscribe {
+	background-color: $greyDark;
+
+	padding: 70px 0;
+
+	.container {
+		@include flex-row;
+		justify-content: space-between;
+
+		// .container @media
+		@media (max-width: $md) {
+			@include flex-column;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__title {
+		@include flex-row;
+		align-items: center;
+
+		font-family: $primaryFontBold;
+		font-size: 30px;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: $white;
+
+		// .subscribe__title @media
+		@media (max-width: $md) {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+	}
+
+	&__form {
+		@include flex-row;
+		flex-wrap: wrap;
+
+		input {
+			height: 100%;
+			width: 255px;
+
+			background-color: #f9f6f1;
+			border: none;
+
+			padding: 0 0 0 20px;
+			margin-right: 35px;
+
+			&::placeholder {
+				font-family: $primaryFontRegular;
+				font-size: 12px;
+				letter-spacing: 0.02em;
+				line-height: 15;
+				color: #8d8d8d;
+			}
+
+			// input @media
+			@media (max-width: $md) {
+				height: 52px;
+				width: 80%;
+				margin: 0 auto 10px;
+
+				&::placeholder {
+					font-size: 16px;
+				}
+			}
+		}
+
+		button {
+			// button @media
+			@media (max-width: $md) {
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+	}
+}

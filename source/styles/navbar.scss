@@ -1,16 +1,21 @@
 .navbar {
-	// ============== Выпадающие списки ===================
+	// ============== dropdowns ===================
 	&-dropdowns {
 		@include flex-row;
 
 		.dropdown button {
 			@include navbar-point;
-			background-color: transparent;
 			border: none;
+			background-color: transparent;
+		}
+
+		// .dropdowns @media
+		@media (max-width: $md) {
+			display: none;
 		}
 	}
 
-	// ============== Оплата и доставка ===================
+	// ============== points ===================
 	&-points {
 		@include flex-row;
 
@@ -20,17 +25,23 @@
 		&__point:first-child {
 			margin-right: 35px;
 		}
+
+		// .points @media
+		@media (max-width: $md) {
+			display: none;
+		}
 	}
 
-	// ============== Корзина ===================
+	// ============== trash ===================
 	&-bag {
 		@include flex-row;
 		align-items: center;
 
 		&__count {
-			margin: 8px 0 0 15px;
 			@include flex-row;
 			align-items: center;
+
+			margin: 8px 0 0 15px;
 
 			span {
 				font-family: $primaryFontBold;
@@ -38,6 +49,7 @@
 				line-height: 15px;
 				letter-spacing: 0.03em;
 				color: $white;
+
 				background-color: $accent;
 
 				padding: 0 13px;
