@@ -4,7 +4,7 @@
 
 ## About
 
-THE LOOP - Brand Clothes Online Shop Landing Page. Made with HTML, Pug(Jade) and Sass. Enjoy!
+THE LOOP - Brand Clothes Online Shop Landing Page. Made with HTML, Pug(Jade), Sass and Bootstrap. Enjoy!
 
 ## Questions?
 
